@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#about,
+#services,
+#portfolio,
+#contact {
+  scroll-margin-top: 145px;
+}
+h3 {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+h3::before {
+  content: "";
+  width: 100px;
+  height: 5px;
+  border-radius: 16px;
+  position: absolute;
+  background-color: #0078ff;
+  bottom: -10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  z-index: 15445;
+  display: grid;
+  place-items: center;
+  position: fixed;
+}
+
+.loading div {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #0078ff;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spanning 1s infinite linear;
+}
+
+@keyframes spanning {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* header style */
+header {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white !important;
+  position: relative;
+}
+
+.navbar .nav-item > a::after {
+  content: "";
+  border-radius: 8px;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after {
+  width: 50px;
+}
+
+.dropdown ul {
+  background-color: white !important;
+}
+
+.dropdown ul a {
+  color: gray !important;
+}
+
+.navbar .dropdown a:hover {
+  color: #0078ff !important;
+}
+
+main {
+  background-color: #f5f5f5;
+  gap: 64px;
+}
+
+.top {
+  z-index: 100000;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0078ff;
+  border-radius: 50%;
+}
+
+/* home style  */
+#home {
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 0.622)), url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/* about style  */
+
+#about .container {
+  padding: 50px 20px;
+}
+
+#about p {
+  color: rgb(104, 104, 104);
+}
+
+#about h4 {
+  font-size: 18px;
+}
+
+#about h5 {
+  font-size: 12px;
+  color: gray;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+}
+
+#about .about {
+  font-size: 18px;
+}
+
+#services h3,
+#portfolio h3 {
+  font-size: 48px;
+}
+
+#services .box-icon i,
+#contact .box-icon a {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+#contact .box-icon a {
+  box-shadow: 0px 0px 0px 4px #0078ff;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+
+#contact .box-icon a:hover,
+#services .box-icon i:hover {
+  color: white;
+  background-color: #0078ff;
+  box-shadow: 0px 0px 0px 5px #0077ff34;
+}
+
+#services .box-icon i {
+  width: 110px;
+  height: 110px;
+  box-shadow: 0px 0px 0px 10px #0078ff;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#services i {
+  font-size: 30px;
+}
+
+#services h4 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+#services p {
+  color: gray;
+}
+
+#statistics {
+  background-image:
+    linear-gradient(to right, #0077ff88), url(../img/counters-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#statistics .box-icon i {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #cde1f8;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#statistics i {
+  font-size: 20px;
+}
+
+#statistics span {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#statistics p {
+  font-weight: 500;
+}
+
+#portfolio img {
+  transition: 1s;
+}
+
+#portfolio img:hover {
+  transform: scale(1.2);
+}
+
+#portfolio .language span {
+  border: 2px solid #0078ff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+#portfolio a {
+  background-color: #0078ff;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 15px;
+}
+
+#testimonial {
+  height: 75vh;
+  background-color: #0078ff;
+  background-image:
+    linear-gradient(to right, #0077ff88), url(../img/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+}
+
+#testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#testimonial button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#contact {
+  min-height: 100vh;
+  padding: 60px 0;
+  display: grid;
+  place-items: center;
+  background-image:
+    linear-gradient(to right, #0077ff88), url(../img/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#contact .container .row {
+  padding: 48px 20px;
+}
+
+#contact input {
+  height: 50px;
+}
+
+#contact textarea {
+  height: 100px;
+}
+
+#contact input:focus {
+  border: 1px solid #0078ff;
+  outline: 4px solid #0077ff00;
+}
+
+footer {
+  background-color: #0078ff;
+}
+@media (max-width: 480px) {
+  nav ul {
+    background-color: black !important;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 10px !important;
+  }
+
+  #home h2 {
+    font-size: 28px !important;
+  }
+
+  #home p {
+    font-size: 18px !important;
+  }
+  #statistics {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 576px) {
+  nav {
+    background-color: black;
+  }
+  nav ul {
+    background-color: black !important;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 10px !important;
+  }
+  #home h2 {
+    font-size: 32px !important;
+  }
+
+  #home p {
+    font-size: 20px !important;
+  }
+  #statistics {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  nav {
+    background-color: black;
+  }
+  nav ul {
+    background-color: black !important;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 10px !important;
+  }
+  #home h2 {
+    font-size: 40px !important;
+  }
+
+  #home p {
+    font-size: 24px !important;
+  }
+  #statistics {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  nav {
+    background-color: black;
+  }
+  #home h2 {
+    font-size: 52px !important;
+  }
+
+  #home p {
+    font-size: 30px !important;
+  }
+  #statistics {
+    padding: 50px 0;
+  }
+}
+
+/* الشاشات الأكبر من 992px */
+@media (min-width: 993px) {
+  #home h2 {
+    font-size: 64px !important;
+  }
+
+  #home p {
+    font-size: 36px !important;
+  }
+  #statistics {
+    padding: 60px 0;
+  }
+}
