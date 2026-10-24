@@ -9,6 +9,7 @@
 #about,
 #services,
 #portfolio,
+#testimonial,
 #contact {
   scroll-margin-top: 145px;
 }
@@ -72,7 +73,6 @@ header {
   z-index: 1000;
 }
 
-
 .navbar a {
   color: white !important;
   position: relative;
@@ -93,7 +93,6 @@ header {
 .navbar a:hover::after {
   width: 50px;
 }
-
 
 .top {
   z-index: 100;
@@ -313,7 +312,7 @@ footer {
 }
 @media (max-width: 480px) {
   nav ul {
-    background-color: black !important;
+    background-color: gray !important ;
     margin-top: 30px;
     border-radius: 8px;
     padding: 10px !important;
@@ -336,7 +335,7 @@ footer {
     background-color: black;
   }
   nav ul {
-    background-color: black !important;
+    background-color: gray !important ;
     margin-top: 30px;
     border-radius: 8px;
     padding: 10px !important;
@@ -358,7 +357,7 @@ footer {
     background-color: black;
   }
   nav ul {
-    background-color: black !important;
+    background-color: gray !important ;
     margin-top: 30px;
     border-radius: 8px;
     padding: 10px !important;
@@ -379,6 +378,12 @@ footer {
   nav {
     background-color: black;
   }
+  nav ul {
+    background-color: gray !important ;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 10px !important;
+  }
   #home h2 {
     font-size: 52px !important;
   }
@@ -391,7 +396,6 @@ footer {
   }
 }
 
-/* الشاشات الأكبر من 992px */
 @media (min-width: 993px) {
   #home h2 {
     font-size: 64px !important;

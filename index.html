@@ -70,6 +70,9 @@
                 <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
@@ -136,15 +139,15 @@
                   </div>
                   <div class="row g-3 text-uppercase">
                     <div>
-                      <div class="row justify-content-between">
-                        <h5 class="col-1">html</h5>
-                        <span class="col-2">95%</span>
+                      <div class="d-flex justify-content-between">
+                        <h5>html</h5>
+                        <span>95%</span>
                       </div>
                       <div
                         class="progress h-50"
                         role="progressbar"
-                        aria-label="Basic example"
-                        aria-valuenow="0"
+                        aria-label="html"
+                        aria-valuenow="95"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       >
@@ -152,15 +155,15 @@
                       </div>
                     </div>
                     <div>
-                      <div class="row justify-content-between">
-                        <h5 class="col-1">css</h5>
-                        <span class="col-2">80%</span>
+                      <div class="d-flex justify-content-between">
+                        <h5>css</h5>
+                        <span>80%</span>
                       </div>
                       <div
                         class="progress h-50"
                         role="progressbar"
-                        aria-label="Basic example"
-                        aria-valuenow="0"
+                        aria-label="css"
+                        aria-valuenow="80"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       >
@@ -168,15 +171,15 @@
                       </div>
                     </div>
                     <div>
-                      <div class="row justify-content-between">
-                        <h5 class="col-1">tailwind</h5>
-                        <span class="col-2">80%</span>
+                      <div class="d-flex justify-content-between">
+                        <h5>tailwind</h5>
+                        <span>80%</span>
                       </div>
                       <div
                         class="progress h-50"
                         role="progressbar"
-                        aria-label="Basic example"
-                        aria-valuenow="0"
+                        aria-label="tailwind"
+                        aria-valuenow="80"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       >
@@ -184,15 +187,15 @@
                       </div>
                     </div>
                     <div>
-                      <div class="row justify-content-between">
-                        <h5 class="col-1">JavaScript</h5>
-                        <span class="col-2">70%</span>
+                      <div class="d-flex justify-content-between">
+                        <h5>JavaScript</h5>
+                        <span>70%</span>
                       </div>
                       <div
                         class="progress h-50"
                         role="progressbar"
-                        aria-label="Basic example"
-                        aria-valuenow="0"
+                        aria-label="javascript"
+                        aria-valuenow="70"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       >
@@ -200,15 +203,15 @@
                       </div>
                     </div>
                     <div>
-                      <div class="row justify-content-between">
-                        <h5 class="col-4">react 19</h5>
-                        <span class="col-2">70%</span>
+                      <div class="d-flex justify-content-between">
+                        <h5>react 19</h5>
+                        <span>70%</span>
                       </div>
                       <div
                         class="progress h-50"
                         role="progressbar"
-                        aria-label="Basic example"
-                        aria-valuenow="0"
+                        aria-label="react"
+                        aria-valuenow="70"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       >
@@ -216,15 +219,15 @@
                       </div>
                     </div>
                     <div>
-                      <div class="row justify-content-between">
-                        <h5 class="col-3 text-uppercase">mui</h5>
-                        <span class="col-2">90%</span>
+                      <div class="d-flex justify-content-between">
+                        <h5>mui</h5>
+                        <span>90%</span>
                       </div>
                       <div
                         class="progress h-50"
                         role="progressbar"
-                        aria-label="Basic example"
-                        aria-valuenow="0"
+                        aria-label="mui"
+                        aria-valuenow="90"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       >
@@ -489,7 +492,7 @@
                       <img
                         src="img/todo-site.png"
                         class="card-img-top"
-                        alt="..."
+                        alt="to-do list img"
                       />
                     </div>
                     <div class="card-body">
@@ -521,9 +524,9 @@
       </section>
 
       <section id="testimonial">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="m-auto text-center">
+        <div class="container-fluid px-0">
+          <div class="row g-0 mx-0">
+            <div class="col-12 m-auto text-center">
               <div
                 id="carouselExampleDark"
                 class="carousel carousel-overlay slide d-grid gap-4"
@@ -531,9 +534,13 @@
               >
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/testimonial-2.jpg" class="m-auto" alt="..." />
+                    <img
+                      src="img/testimonial-2.jpg"
+                      class="m-auto"
+                      alt="Testimonial 1"
+                    />
                     <h5 class="my-2">lorem</h5>
-                    <p class="col-5 m-auto my-3">
+                    <p class="col-10 col-md-5 m-auto my-3">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Enim voluptas porro inventore consequuntur doloremque
                       error quasi nesciunt nemo delectus eaque.
@@ -543,10 +550,10 @@
                     <img
                       src="img/chemistry-cover.png"
                       class="m-auto"
-                      alt="..."
+                      alt="Testimonial 2"
                     />
                     <h5 class="my-2">lorem</h5>
-                    <p class="col-5 m-auto my-3">
+                    <p class="col-10 col-md-5 m-auto my-3">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Enim voluptas porro inventore consequuntur doloremque
                       error quasi nesciunt nemo delectus eaque.
@@ -556,10 +563,10 @@
                     <img
                       src="img/chemistry-cover.png"
                       class="m-auto"
-                      alt="..."
+                      alt="Testimonial 3"
                     />
                     <h5 class="my-2">lorem</h5>
-                    <p class="col-5 m-auto my-3">
+                    <p class="col-10 col-md-5 m-auto my-3">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Enim voluptas porro inventore consequuntur doloremque
                       error quasi nesciunt nemo delectus eaque.
@@ -713,7 +720,7 @@
             <div class="text-center py-4 text-white">
               <div>
                 &copy; Copyright <span class="fw-bold">Mohamed Shehta</span>.
-               <div> All Rights Reserved</div>
+                All Rights Reserved
               </div>
               <div>Designed by Mohamed Shehta</div>
             </div>

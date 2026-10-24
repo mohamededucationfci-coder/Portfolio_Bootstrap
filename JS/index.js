@@ -41,3 +41,17 @@ function scrollToTop() {
   });
 }
 scrollToTop();
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+const navCollapse = document.querySelector("#navbarSupportedContent");
+
+function appearAndHiddenNavbar() {
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (navCollapse.classList.contains("show")) {
+        bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+      }
+    });
+  });
+}
+appearAndHiddenNavbar()
